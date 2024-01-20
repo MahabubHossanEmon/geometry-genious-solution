@@ -24,13 +24,13 @@
                         <h2>Triangle</h2>
                         <p>Area (A) = 0.5 X b X h</p>
                        <p> 
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <input id="triangle-base" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
                         <span>cm</span>
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <input id="triangle-height" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
                         <span>cm</span>
                        </p>
-                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
-                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                       <p class="text-2xl">Area: <span id="triangle-area">0</span>cm <sup>2</sup> </p>
+                       <button id="btn-calculate" class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
                     </div>
 
                 </div>
@@ -46,13 +46,13 @@
                         <h2>Rectangle</h2>
                         <p>Area (A) = w X l</p>
                        <p> 
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <input id="rectangle-width" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
                         <span>cm</span>
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <input id="rectangle-length" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
                         <span>cm</span>
                        </p>
-                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
-                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                       <p class="text-2xl">Area: <span id="rectangle-area">0</span>cm <sup>2</sup> </p>
+                       <button id="btn-calculate1" class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
                     </div>
 
                 </div>
@@ -107,5 +107,7 @@
 
         </div>
     </main>
+    <script src="js/similar.js"></script>
+    <script src="js/area-calculator.js"></script>
 </body>
 </html>
