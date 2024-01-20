@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!--main container-->
+        <div class="flex flex-col lg:flex-row">
+            <!--shape container-->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-3">
+                <!--triangle card-->
+                <div class="w-60 bg-slate-100 shadow-xl hover:bg-sky-500 mx-2 my-2 px-2 pt-4">
+                    <div class="flex justify-center items-center">
+                        <img  src="images/triangle.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                       <p> 
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <span>cm</span>
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <span>cm</span>
+                       </p>
+                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
+                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                    </div>
+
+                </div>
+
+                <!--rectangle card-->
+                <div class="w-60 bg-slate-100 shadow-xl hover:bg-sky-500 mx-2 my-2 px-2 pt-4">
+                    <div class="flex justify-center items-center">
+                        <img  src="images/rectangle.png" alt="">
+                    </div>
+
+                 
+                    <div>
+                        <h2>Rectangle</h2>
+                        <p>Area (A) = w X l</p>
+                       <p> 
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <span>cm</span>
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <span>cm</span>
+                       </p>
+                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
+                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                    </div>
+
+                </div>
+
+                   <!-- parallelogram card -->
+                <div class="w-60 bg-slate-100 shadow-xl hover:bg-sky-500 mx-2 my-2 px-2 pt-4">
+                    <div class="flex justify-center items-center">
+                        <img  src="images/parallelogram.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Parallelogram</h2>
+                        <p>Area (A) = b X h</p>
+                       <p> 
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <span>cm</span>
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <span>cm</span>
+                       </p>
+                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
+                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                    </div>
+
+                </div>
+                <!-- Ellipse card -->
+                
+                <div class="w-60 bg-slate-100 shadow-xl hover:bg-sky-500 mx-2 my-2 px-2 pt-4">
+                    <div class="flex justify-center items-center">
+                        <img  src="images/ellipse.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                       <p> 
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <span>cm</span>
+                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <span>cm</span>
+                       </p>
+                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
+                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button> 
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="ml-7">
+                <div class="text-4xl">Area Calculator</div>
+                <div id="calculation-entry">
+                  
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
