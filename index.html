@@ -66,13 +66,13 @@
                         <h2>Parallelogram</h2>
                         <p>Area (A) = b X h</p>
                        <p> 
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <input id="parallelogram-width" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
                         <span>cm</span>
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <input id="parallelogram-height" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
                         <span>cm</span>
                        </p>
-                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
-                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
+                       <p class="text-2xl">Area:<span id="parallelogram-area">0</span>cm <sup>2</sup> </p>
+                       <button id="submit-parallelogram" class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button>
                     </div>
 
                 </div>
@@ -83,16 +83,17 @@
                         <img  src="images/ellipse.png" alt="">
                     </div>
                     <div>
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Ellipse</h2>
+                        <p>Area (A) = π ab</p>
+                      
                        <p> 
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="base">
+                        <input id="ellipse-major-radius" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="redious-major">
                         <span>cm</span>
-                        <input class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
+                        <input id="ellipse-minor-radius" class="border bg-slate-100 text-xl w-24 px-2" type="number" placeholder="height">
                         <span>cm</span>
                        </p>
-                       <p>Area: <span>0</span>cm <sup>2</sup> </p>
-                       <button class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button> 
+                       <p class="text-2xl">Area: <span id="ellipse-area">0</span>cm <sup>2</sup> </p>
+                       <button id="submit-ellipse" class="text-center bg-orange-500 rounded-md text-3xl text-lime-50 mt-2 mb-1">Calculate</button> 
                     </div>
 
                 </div>

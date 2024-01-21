@@ -13,6 +13,11 @@ function calculateTriangleArea(){
     // const heightValue = parseFloat(heightFieldText);
     const { baseValue, heightValue } = getBaseAndHeightValue('triangle-base','triangle-height');
 
+    if(isNaN(baseValue) || isNaN(heightValue)){
+        alert('please type number');
+        return;
+    }
+
     const area = 0.5 * baseValue * heightValue;
 
     //show triangle area
@@ -32,6 +37,10 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 
 function calculateRactangleArea(){
     const {baseValue, heightValue} =getBaseAndHeightValue('rectangle-width','rectangle-length');
+    if(isNaN(baseValue) ||isNaN(heightValue)){
+        alert('please type number')
+        return;
+    }
     const area =baseValue * heightValue;
 
     //show rectangle area
@@ -48,6 +57,51 @@ document.getElementById('btn-calculate1').addEventListener('click',function(){
 
 
 
+//parallelogram
+function calculateParallelogramArea(){
+    const { baseValue, heightValue } = getBaseAndHeightValue('parallelogram-width','parallelogram-height');
+    if(isNaN(baseValue) || isNaN(heightValue)){
+        alert('Please insert number');
+        return
+    }
+    const area = baseValue * heightValue;
+
+    //show parallelogram area
+    const setAnswer = document.getElementById('parallelogram-area');
+    setAnswer.innerText =area
+    
+   
+    
+     addToCalculationEntry('parallelogram',area);
+}
+
+document.getElementById('submit-parallelogram').addEventListener('click',function(){
+    calculateParallelogramArea();
+    clearInputField('parallelogram-width','parallelogram-height');
+
+})
+
+function calculateEllipseArea(){
+    const {baseValue,heightValue}=getBaseAndHeightValue('ellipse-major-radius','ellipse-minor-radius');
+    if(isNaN(baseValue) || isNaN(heightValue)){
+        alert('Please insert number');
+        return
+    }
+    const area =3.14 * baseValue * heightValue;
+    const areaTwoDecimal =area.toFixed(2);
+    const setAnswer = document.getElementById('ellipse-area');
+    setAnswer.innerText =areaTwoDecimal;
+    
+   
+    
+     addToCalculationEntry('ellipse',areaTwoDecimal);
+}
+
+document.getElementById('submit-ellipse').addEventListener('click',function(){
+    calculateEllipseArea();
+    clearInputField('ellipse-major-radius','ellipse-minor-radius');
+
+})
 
 
 function addToCalculationEntry(areaType,area){
@@ -58,3 +112,5 @@ function addToCalculationEntry(areaType,area){
     p.innerHTML = `${count+1}.${areaType} ${area} cm<sup>2</sup> <button class="btn btn-sm btn-success">Convert</button>`;
     calculationEntry.appendChild(p);
 }
+
+
